@@ -1,0 +1,127 @@
+/* ------------------------------------------------------------ */
+/* IMPORTANT:                                                   */
+/*      - both, C and C++ style comments are supported          */
+/*      - ALWAYS use "." (dot) when entering numbers!           */
+/*        For ex. instead of 20, put 20.0                       */
+/*      - Use same unit system for all values!                  */
+/* ------------------------------------------------------------ */
+
+
+bc:
+(
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:1; //bottom side
+    isothermal:{temp = 333.0; };
+    //normal_heat_flux:{flux= 0.0};
+    //radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+
+ /*--- BOUNDARY ---*/
+  {
+    bcnum:2; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux = 0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:3; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:4; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:5; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:6; //bottom side
+    //isothermal:{temp = 330.0; };
+    radconv:{alfa=10000.0;eps=0.0;};
+    //normal_heat_flux:{flux =0.0;};
+ 
+ },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:7; //bottom side
+    //isothermal:{temp = 330.0; };
+    //radconv:{alfa=10000.0;eps=0.0;};
+    normal_heat_flux:{flux =0.0;};
+
+  },
+
+/*--- BOUNDARY ---*/
+  {
+    bcnum:8; //bottom side
+    //isothermal:{temp = 400.0; };
+    normal_heat_flux:{flux =0.0};
+    //radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:9; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:10; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:11; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:12; //bottom side
+    //isothermal:{temp = 400.0; };
+    //normal_heat_flux:{flux =0.0};
+    radconv:{alfa=10000.0;eps=0.0;};
+
+  },
+
+/*--- BOUNDARY ---*/
+  {
+    bcnum:21; //bottom side
+    //isothermal:{temp = 330.0; };
+    normal_heat_flux:{flux =0.0;};
+    //symmetry:{};
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:22; //bottom side
+    //isothermal:{temp = 330.0; };
+    normal_heat_flux:{flux =0.0;};
+    //symmetry:{};    
+  }
+
+);
+

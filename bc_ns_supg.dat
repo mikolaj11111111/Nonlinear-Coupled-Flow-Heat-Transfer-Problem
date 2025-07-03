@@ -1,0 +1,114 @@
+/* ------------------------------------------------------------ */
+/* IMPORTANT:                                                   */
+/*      - both, C and C++ style comments are supported          */
+/*      - ALWAYS use "." (dot) when entering numbers!           */
+/*        For ex. instead of 20, put 20.0                       */
+/*      - Use same unit system for all values!                  */
+/* ------------------------------------------------------------ */
+
+bc:
+(
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:1; // boundary number 1 - INFLOW
+    inflow_rect_2d:{ //bc type
+      v = 1.5; //bc parameters
+      n1 = [0.0, 0.0, 0.0];
+      n2 = [0.0, 0.0, 0.01];
+      n3 = [3.0, 0.0, 0.0];
+      n4 = [3.0, 0.0, 0.01];
+    };
+    //velocity:{ v = [0.0, 1.0, 0.0]; };
+   },
+
+  /*--- BOUNDARY ---*/ 
+  {
+    bcnum:2; // WALL
+    noslip:{};
+  },
+  
+  
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:3; // WALL
+    noslip:{};
+
+  },
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:4;  // WALL
+    noslip:{};
+
+  },
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:5; // WALL
+    noslip:{};
+
+  },
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:6; // WALL
+    noslip:{};
+
+  },
+
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:7; // OUTFLOW
+    outflow:{
+      pressure = 0.0;
+    };
+    //noslip:{};
+
+  },
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:8; // OUTFLOW
+    outflow:{
+      pressure = 0.0;
+    };
+    //noslip:{};
+
+  },
+
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:9; // WALL
+    noslip:{};
+
+  },
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:10; // OUTFLOW
+    noslip:{};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:11; // OUTFLOW
+    noslip:{};
+
+  },
+/*--- BOUNDARY ---*/
+  {
+    bcnum:12; // OUTFLOW
+    noslip:{};
+
+  },
+
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:21; // OUTFLOW
+    symmetry:{};
+
+  },
+  /*--- BOUNDARY ---*/
+  {
+    bcnum:22; // OUTFLOW
+    symmetry:{};
+
+  }
+
+
+);

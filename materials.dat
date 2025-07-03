@@ -1,0 +1,25 @@
+/* ------------------------------------------------------------	*/
+/* IMPORTANT:                                                	*/
+/* 	- both, C and C++ style comments are supported      	*/
+/*      - most values can be set as:				*/		
+/*      	* constants: v = 0.0;				*/
+/*		* piecewise linear interpolated:		*/
+/*			v = ((t1,v1),(t2,v2),....)		*/
+/*	- ALWAYS use "." (dot) when entering numbers!		*/
+/*	  For ex. instead of 20, put 20.0			*/
+/*	- Use same unit system for all values!			*/
+/* ------------------------------------------------------------ */
+
+materials:
+(
+ {
+   name   = "Test_material";
+   
+   /* constant values */
+   density = 7500.0;
+   specific_heat = 650.0;
+   thermal_conductivity = 3500.0;
+   dynamic_viscosity = 1.0e2;
+
+ } 
+);
